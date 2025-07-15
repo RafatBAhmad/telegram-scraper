@@ -5,3 +5,10 @@ services:
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python telegramScraper.py"
     autoDeploy: true
+    envVars:
+      - key: api_id
+        value: 24446133
+      - key: api_hash
+        value: 6c11abd16230bf4dc23cb57266391857
+      - key: api_url
+        value: https://ahwal-checkpoints-api.onrender.com/api/v1/checkpoints/update

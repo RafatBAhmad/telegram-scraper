@@ -159,8 +159,8 @@ async def main_loop():
             await fetch_and_process()
         except Exception as e:
             print(f"⚠️ حصل خطأ أثناء التنفيذ: {e}")
-        print("⏳ ننتظر 10 ثواني...")
-        await asyncio.sleep(120)
+        print("⏳ ننتظر 300 ثانية...")
+        await asyncio.sleep(300)
 
 with client:
     client.loop.run_until_complete(main_loop())
