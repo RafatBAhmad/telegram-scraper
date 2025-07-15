@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: telegram-scraper
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python telegramScraper.py"
+    autoDeploy: true
